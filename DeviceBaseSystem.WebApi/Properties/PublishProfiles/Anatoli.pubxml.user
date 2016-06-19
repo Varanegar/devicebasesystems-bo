@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\anatoli\cloud</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Aantoli.Common.Entity.dll">
+      <publishTime>12/26/2015 15:27:05</publishTime>
+    </File>
+    <File Include="bin/Aantoli.Common.Entity.pdb">
+      <publishTime>12/26/2015 15:27:05</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Business.dll">
+      <publishTime>05/29/2016 11:04:32</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Business.pdb">
+      <publishTime>05/29/2016 11:04:32</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Cloud.Gateway.dll">
+      <publishTime>12/25/2015 15:07:19</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Cloud.Gateway.pdb">
+      <publishTime>12/25/2015 15:07:19</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Cloud.WebApi.dll">
+      <publishTime>05/30/2016 11:13:08</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Cloud.WebApi.pdb">
+      <publishTime>05/30/2016 11:13:08</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Common.Gateway.dll">
+      <publishTime>12/26/2015 15:27:08</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Common.Gateway.pdb">
+      <publishTime>12/26/2015 15:27:08</publishTime>
+    </File>
+    <File Include="bin/Anatoli.DataAccess.dll">
+      <publishTime>05/28/2016 09:58:39</publishTime>
+    </File>
+    <File Include="bin/Anatoli.DataAccess.pdb">
+      <publishTime>05/28/2016 09:58:39</publishTime>
+    </File>
+    <File Include="bin/Anatoli.DMC.Business.dll">
+      <publishTime>05/29/2016 11:04:33</publishTime>
+    </File>
+    <File Include="bin/Anatoli.DMC.Business.pdb">
+      <publishTime>05/29/2016 11:04:33</publishTime>
+    </File>
+    <File Include="bin/Anatoli.DMC.DataAccess.dll">
+      <publishTime>05/29/2016 11:04:31</publishTime>
+    </File>
+    <File Include="bin/Anatoli.DMC.DataAccess.pdb">
+      <publishTime>05/29/2016 11:04:31</publishTime>
+    </File>
+    <File Include="bin/Anatoli.DMC.ViewModels.dll">
+      <publishTime>05/29/2016 11:04:29</publishTime>
+    </File>
+    <File Include="bin/Anatoli.DMC.ViewModels.pdb">
+      <publishTime>05/29/2016 11:04:29</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Framework.dll">
+      <publishTime>12/26/2015 15:27:05</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Framework.pdb">
+      <publishTime>12/26/2015 15:27:05</publishTime>
+    </File>
+    <File Include="bin/Anatoli.PMC.Business.dll">
+      <publishTime>05/30/2016 09:54:27</publishTime>
+    </File>
+    <File Include="bin/Anatoli.PMC.Business.pdb">
+      <publishTime>05/30/2016 09:54:27</publishTime>
+    </File>
+    <File Include="bin/Anatoli.PMC.DataAccess.dll">
+      <publishTime>05/29/2016 11:04:30</publishTime>
+    </File>
+    <File Include="bin/Anatoli.PMC.DataAccess.pdb">
+      <publishTime>05/29/2016 11:04:30</publishTime>
+    </File>
+    <File Include="bin/Anatoli.PMC.ViewModels.dll">
+      <publishTime>05/27/2016 21:02:01</publishTime>
+    </File>
+    <File Include="bin/Anatoli.PMC.ViewModels.pdb">
+      <publishTime>05/27/2016 21:02:01</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Rastak.Business.dll">
+      <publishTime>05/29/2016 11:04:33</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Rastak.Business.pdb">
+      <publishTime>05/29/2016 11:04:33</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Rastak.DataAccess.dll">
+      <publishTime>05/29/2016 11:04:30</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Rastak.DataAccess.pdb">
+      <publishTime>05/29/2016 11:04:30</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Rastak.ViewModels.dll">
+      <publishTime>05/27/2016 21:02:01</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Rastak.ViewModels.pdb">
+      <publishTime>05/27/2016 21:02:01</publishTime>
+    </File>
+    <File Include="bin/Anatoli.SDS.Business.dll">
+      <publishTime>05/29/2016 11:04:31</publishTime>
+    </File>
+    <File Include="bin/Anatoli.SDS.Business.pdb">
+      <publishTime>05/29/2016 11:04:31</publishTime>
+    </File>
+    <File Include="bin/Anatoli.SDS.DataAccess.dll">
+      <publishTime>05/29/2016 11:04:30</publishTime>
+    </File>
+    <File Include="bin/Anatoli.SDS.DataAccess.pdb">
+      <publishTime>05/29/2016 11:04:30</publishTime>
+    </File>
+    <File Include="bin/Anatoli.SDS.ViewModels.dll">
+      <publishTime>05/27/2016 21:02:01</publishTime>
+    </File>
+    <File Include="bin/Anatoli.SDS.ViewModels.pdb">
+      <publishTime>05/27/2016 21:02:01</publishTime>
+    </File>
+    <File Include="bin/Anatoli.ViewModels.dll">
+      <publishTime>05/29/2016 11:04:29</publishTime>
+    </File>
+    <File Include="bin/Anatoli.ViewModels.pdb">
+      <publishTime>05/29/2016 11:04:29</publishTime>
+    </File>
+    <File Include="bin/AutoMapper.dll">
+      <publishTime>03/23/2016 17:26:06</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>01/06/2016 08:29:07</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.Extended.dll">
+      <publishTime>12/25/2015 22:54:03</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>01/06/2016 08:29:07</publishTime>
+    </File>
+    <File Include="bin/Ionic.Zip.dll">
+      <publishTime>03/15/2016 09:29:35</publishTime>
+    </File>
+    <File Include="bin/LinqKit.dll">
+      <publishTime>04/29/2016 18:15:04</publishTime>
+    </File>
+    <File Include="bin/LinqKit.pdb">
+      <publishTime>04/12/2016 20:07:29</publishTime>
+    </File>
+    <File Include="bin/Log4Net.Async.dll">
+      <publishTime>12/29/2015 17:46:32</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>12/29/2015 17:36:54</publishTime>
+    </File>
+    <File Include="bin/Magick.NET-Q16-AnyCPU.dll">
+      <publishTime>05/05/2016 22:07:40</publishTime>
+    </File>
+    <File Include="bin/Magick.NET-Q16-x64.dll">
+      <publishTime>05/05/2016 22:07:26</publishTime>
+    </File>
+    <File Include="bin/Magick.NET-Q16-x64.Native.dll">
+      <publishTime>05/05/2016 22:07:26</publishTime>
+    </File>
+    <File Include="bin/Magick.NET-Q16-x86.dll">
+      <publishTime>05/08/2016 19:25:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>01/06/2016 08:19:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>01/06/2016 08:29:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>01/06/2016 08:19:17</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Cors.dll">
+      <publishTime>01/06/2016 08:19:28</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>01/06/2016 08:18:43</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>01/06/2016 08:19:45</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>01/06/2016 08:19:57</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>01/06/2016 08:19:03</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Jwt.dll">
+      <publishTime>01/06/2016 08:20:33</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>01/06/2016 08:19:04</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>01/06/2016 08:29:54</publishTime>
+    </File>
+    <File Include="bin/NLog.dll">
+      <publishTime>05/16/2016 23:26:48</publishTime>
+    </File>
+    <File Include="bin/NLog.Web.dll">
+      <publishTime>05/12/2016 22:54:16</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>01/06/2016 08:34:06</publishTime>
+    </File>
+    <File Include="bin/Parse.dll">
+      <publishTime>12/26/2015 01:49:45</publishTime>
+    </File>
+    <File Include="bin/Parse.NetFx45.dll">
+      <publishTime>12/26/2015 01:49:45</publishTime>
+    </File>
+    <File Include="bin/PersianDate.dll">
+      <publishTime>02/20/2016 18:33:46</publishTime>
+    </File>
+    <File Include="bin/protobuf-net.dll">
+      <publishTime>05/15/2016 08:39:56</publishTime>
+    </File>
+    <File Include="bin/SendGrid.dll">
+      <publishTime>01/06/2016 08:18:16</publishTime>
+    </File>
+    <File Include="bin/SendGrid.SmtpApi.dll">
+      <publishTime>01/06/2016 08:18:16</publishTime>
+    </File>
+    <File Include="bin/SendGridMail.dll">
+      <publishTime>01/06/2016 08:18:16</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x64/msvcr100.dll">
+      <publishTime>03/31/2016 04:05:23</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x64/SqlServerSpatial110.dll">
+      <publishTime>03/31/2016 04:05:23</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x86/msvcr100.dll">
+      <publishTime>03/31/2016 04:05:23</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x86/SqlServerSpatial110.dll">
+      <publishTime>03/31/2016 04:05:23</publishTime>
+    </File>
+    <File Include="bin/System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>01/06/2016 08:29:22</publishTime>
+    </File>
+    <File Include="bin/System.IdentityModel.Tokens.Jwt.pdb">
+      <publishTime>01/06/2016 08:29:22</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>12/22/2015 21:21:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>01/06/2016 08:29:41</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>12/22/2015 21:21:19</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Owin.dll">
+      <publishTime>12/22/2015 21:21:19</publishTime>
+    </File>
+    <File Include="bin/Thinktecture.IdentityModel.Client.Net45.dll">
+      <publishTime>01/01/2016 15:37:16</publishTime>
+    </File>
+    <File Include="bin/Thinktecture.IdentityModel.Client.Net45.pdb">
+      <publishTime>01/01/2016 15:37:16</publishTime>
+    </File>
+    <File Include="bin/Thinktecture.IdentityModel.Core.dll">
+      <publishTime>01/06/2016 08:24:34</publishTime>
+    </File>
+    <File Include="bin/Thinktecture.IdentityModel.Core.pdb">
+      <publishTime>01/06/2016 08:24:34</publishTime>
+    </File>
+    <File Include="bin/Thunderstruck.dll">
+      <publishTime>05/27/2016 21:01:47</publishTime>
+    </File>
+    <File Include="bin/Thunderstruck.pdb">
+      <publishTime>05/27/2016 21:01:47</publishTime>
+    </File>
+    <File Include="bin/WebApiContrib.Formatting.ProtoBuf.dll">
+      <publishTime>05/15/2016 08:39:56</publishTime>
+    </File>
+    <File Include="Magick.NET-Q16-x64.Native.dll">
+      <publishTime>05/05/2016 22:07:26</publishTime>
+    </File>
+    <File Include="NLog.config">
+      <publishTime>05/21/2016 00:06:25</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/20/2016 16:22:49</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/25/2016 21:22:42</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

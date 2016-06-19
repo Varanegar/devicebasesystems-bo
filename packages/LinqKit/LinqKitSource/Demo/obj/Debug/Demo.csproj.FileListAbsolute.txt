@@ -1,0 +1,10 @@
+D:\GIT\AnatoliaLibrary\Source\Windows\Cloud\WebApi\packages\LinqKit\LinqKitSource\Demo\bin\Debug\Demo.exe.config
+D:\GIT\AnatoliaLibrary\Source\Windows\Cloud\WebApi\packages\LinqKit\LinqKitSource\Demo\bin\Debug\DemoData.mdf
+D:\GIT\AnatoliaLibrary\Source\Windows\Cloud\WebApi\packages\LinqKit\LinqKitSource\Demo\bin\Debug\DemoData_log.ldf
+D:\GIT\AnatoliaLibrary\Source\Windows\Cloud\WebApi\packages\LinqKit\LinqKitSource\Demo\bin\Debug\Demo.exe
+D:\GIT\AnatoliaLibrary\Source\Windows\Cloud\WebApi\packages\LinqKit\LinqKitSource\Demo\bin\Debug\Demo.pdb
+D:\GIT\AnatoliaLibrary\Source\Windows\Cloud\WebApi\packages\LinqKit\LinqKitSource\Demo\bin\Debug\LinqKit.dll
+D:\GIT\AnatoliaLibrary\Source\Windows\Cloud\WebApi\packages\LinqKit\LinqKitSource\Demo\bin\Debug\LinqKit.pdb
+D:\GIT\AnatoliaLibrary\Source\Windows\Cloud\WebApi\packages\LinqKit\LinqKitSource\Demo\obj\Debug\Demo.csprojResolveAssemblyReference.cache
+D:\GIT\AnatoliaLibrary\Source\Windows\Cloud\WebApi\packages\LinqKit\LinqKitSource\Demo\obj\Debug\Demo.exe
+D:\GIT\AnatoliaLibrary\Source\Windows\Cloud\WebApi\packages\LinqKit\LinqKitSource\Demo\obj\Debug\Demo.pdb

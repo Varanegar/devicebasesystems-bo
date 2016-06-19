@@ -1,0 +1,5 @@
+D:\GIT\AnatoliaLibrary\Source\Windows\Cloud\WebApi\packages\LinqKit\LinqKitSource\bin\Debug\LinqKit.dll
+D:\GIT\AnatoliaLibrary\Source\Windows\Cloud\WebApi\packages\LinqKit\LinqKitSource\bin\Debug\LinqKit.pdb
+D:\GIT\AnatoliaLibrary\Source\Windows\Cloud\WebApi\packages\LinqKit\LinqKitSource\obj\Debug\LinqKit.csprojResolveAssemblyReference.cache
+D:\GIT\AnatoliaLibrary\Source\Windows\Cloud\WebApi\packages\LinqKit\LinqKitSource\obj\Debug\LinqKit.dll
+D:\GIT\AnatoliaLibrary\Source\Windows\Cloud\WebApi\packages\LinqKit\LinqKitSource\obj\Debug\LinqKit.pdb
