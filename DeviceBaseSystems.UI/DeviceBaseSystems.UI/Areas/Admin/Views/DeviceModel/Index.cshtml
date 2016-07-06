@@ -1,0 +1,23 @@
+﻿@Scripts.Render("~/areas/admin/Scripts/devicemodel.js")
+
+    @{
+        ViewBag.Title = "مدل دستگاه";   
+    }
+
+<br/>
+<div class="panel panel-default ">
+    
+    <div class="panel-heading">  
+        <button id='btn_device_mode_add'  class="btn btn-primary">مدل جدید <span class='glyphicon glyphicon-plus'></span></button>
+    
+    </div>
+    <div class="panel-body">
+        <div id="grd_device_model"> </div>
+
+        @Html.Partial("_Create")
+
+
+    </div>
+
+</div>
+

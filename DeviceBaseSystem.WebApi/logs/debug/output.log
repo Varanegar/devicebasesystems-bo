@@ -1,0 +1,19 @@
+2016-07-06 12:15:28.7449|ERROR|Anatoli.Cloud.WebApi.Controllers.BaseApiController|AnatoliMobileApp|DeviceBaseSystem.Controllers.DeviceModelController+<DeleteDeviceModels>d__e.MoveNext(d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:95)|Web API Call Error
+EXCEPTION: AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DeviceModelViewModel -> IEnumerable`1
+Anatoli.ViewModels.DeviceBaseSystem.DeviceModelViewModel -> System.Collections.Generic.IEnumerable`1[[DeviceBaseSystem.DataAccess.Models.DeviceModel, DeviceBaseSystem.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
+Destination path:
+IEnumerable`1
+
+Source value:
+Anatoli.ViewModels.DeviceBaseSystem.DeviceModelViewModel
+   at AutoMapper.MappingEngine.Map(ResolutionContext context)
+   at AutoMapper.Mapper.MapCore(Object source, Type sourceType, Type destinationType, MappingOperationOptions options)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType, Action`1 opts)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source, Action`1 opts)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at DeviceBaseSystem.Controllers.DeviceModelController.<DeleteDeviceModels>d__e.MoveNext() in d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:line 88

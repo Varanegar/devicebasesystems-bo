@@ -32,21 +32,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Anatoli.Common.Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\SharedLibraries\Anatoli.Common.Business.dll</HintPath>
+    <Reference Include="Anatoli.Common.Business">
+      <HintPath>..\..\..\Anatoli\Anatoli-SharedLibrary\Anatoli.Common.Business.dll</HintPath>
     </Reference>
-    <Reference Include="Anatoli.Common.DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\SharedLibraries\Anatoli.Common.DataAccess.dll</HintPath>
+    <Reference Include="Anatoli.Common.DataAccess">
+      <HintPath>..\..\..\Anatoli\Anatoli-SharedLibrary\Anatoli.Common.DataAccess.dll</HintPath>
     </Reference>
-    <Reference Include="Anatoli.Common.ViewModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\SharedLibraries\Anatoli.Common.ViewModel.dll</HintPath>
+    <Reference Include="Anatoli.Common.ViewModel">
+      <HintPath>..\..\..\Anatoli\Anatoli-SharedLibrary\Anatoli.Common.ViewModel.dll</HintPath>
     </Reference>
-    <Reference Include="Anatoli.ViewModels, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\SharedLibraries\Anatoli.ViewModels.dll</HintPath>
+    <Reference Include="Anatoli.ViewModels">
+      <HintPath>..\..\..\Anatoli\Anatoli-SharedLibrary\Anatoli.ViewModels.dll</HintPath>
     </Reference>
     <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
@@ -108,6 +104,8 @@
   <ItemGroup>
     <Compile Include="Domain\Account\UserDomain.cs" />
     <Compile Include="Domain\Authorization\AuthorizationDomain.cs" />
+    <Compile Include="Domain\DeviceModelDomain.cs" />
+    <Compile Include="Domain\BrandDomain.cs" />
     <Compile Include="Domain\Permissions\PermissionDomain.cs" />
     <Compile Include="Domain\RawBusinessDomain.cs" />
     <Compile Include="Helpers\InterServerCommunication.cs" />

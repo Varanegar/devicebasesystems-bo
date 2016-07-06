@@ -1,0 +1,337 @@
+2016-07-05 16:21:12.2290|ERROR|Anatoli.Cloud.WebApi.Controllers.BaseApiController|AnatoliMobileApp|DeviceBaseSystem.Controllers.DeviceModelController+<GetDeviceModels>d__0.MoveNext(d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:33)|Web API Call Error
+EXCEPTION: System.IO.FileLoadException: Could not load file or assembly 'protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67'
+   at System.ModuleHandle.ResolveType(RuntimeModule module, Int32 typeToken, IntPtr* typeInstArgs, Int32 typeInstCount, IntPtr* methodInstArgs, Int32 methodInstCount, ObjectHandleOnStack type)
+   at System.ModuleHandle.ResolveTypeHandleInternal(RuntimeModule module, Int32 typeToken, RuntimeTypeHandle[] typeInstantiationContext, RuntimeTypeHandle[] methodInstantiationContext)
+   at System.Reflection.RuntimeModule.ResolveType(Int32 metadataToken, Type[] genericTypeArguments, Type[] genericMethodArguments)
+   at System.Reflection.CustomAttribute.FilterCustomAttributeRecord(CustomAttributeRecord caRecord, MetadataImport scope, Assembly& lastAptcaOkAssembly, RuntimeModule decoratedModule, MetadataToken decoratedToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, Object[] attributes, IList derivedAttributes, RuntimeType& attributeType, IRuntimeMethodInfo& ctor, Boolean& ctorHasParameters, Boolean& isVarArg)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeModule decoratedModule, Int32 decoratedMetadataToken, Int32 pcaCount, RuntimeType attributeFilterType, Boolean mustBeInheritable, IList derivedAttributes, Boolean isDecoratedTargetSecurityTransparent)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeType type, RuntimeType caType, Boolean inherit)
+   at System.RuntimeType.GetCustomAttributes(Type attributeType, Boolean inherit)
+   at System.ComponentModel.TypeDescriptor.CheckDefaultProvider(Type type)
+   at System.ComponentModel.TypeDescriptor.CheckDefaultProvider(Type type)
+   at System.ComponentModel.TypeDescriptor.NodeFor(Type type, Boolean createDelegator)
+   at System.ComponentModel.TypeDescriptor.GetDescriptor(Type type, String typeName)
+   at System.ComponentModel.TypeDescriptor.GetConverter(Type type)
+   at AutoMapper.Mappers.TypeConverterMapper.GetTypeConverter(Type type)
+   at AutoMapper.Mappers.TypeConverterMapper.IsMatch(TypePair context)
+   at AutoMapper.MapperConfiguration.<>c__DisplayClass94_0.<CoveredByObjectMap>b__0(IObjectMapper m)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at AutoMapper.MapperConfiguration.CoveredByObjectMap(TypePair typePair)
+   at AutoMapper.MapperConfiguration.<>c__DisplayClass76_0.<ResolveTypeMap>b__1(TypePair tp)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at AutoMapper.MapperConfiguration.<>c__DisplayClass76_0.<ResolveTypeMap>b__0(TypePair _)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at AutoMapper.MapperConfiguration.ResolveTypeMap(TypePair typePair)
+   at AutoMapper.MapperConfiguration.ResolveTypeMap(Type sourceType, Type destinationType)
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpression(ExpressionRequest request, Expression instanceParameter, ConcurrentDictionary`2 typePairCount)
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpression(ExpressionRequest request, ConcurrentDictionary`2 typePairCount)
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.<CreateMapExpression>b__5_0(ExpressionRequest tp)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpression(Type sourceType, Type destinationType, IDictionary`2 parameters, MemberInfo[] membersToExpand)
+   at AutoMapper.QueryableExtensions.ProjectionExpression.To[TResult](IDictionary`2 parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.ProjectionExpression.To[TResult](Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand)
+   at Anatoli.Common.DataAccess.Repositories.BaseAnatoliRepository`1.<FindAllAsync>d__27`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Anatoli.Common.Business.BusinessDomainV3`1.<GetAllAsync>d__24`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Anatoli.Common.Business.BusinessDomainV3`1.<GetAllAsync>d__25`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Anatoli.Common.Business.BusinessDomainV3`1.<GetAllAsync>d__23`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DeviceBaseSystem.Controllers.DeviceModelController.<GetDeviceModels>d__0.MoveNext() in d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:line 28
+
+=== Pre-bind state information ===
+LOG: DisplayName = protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67
+ (Fully-specified)
+LOG: Appbase = file:///D:/GIT/DeviceBaseSystems/DeviceBaseSystems-BO/DeviceBaseSystem.WebApi/
+LOG: Initial PrivatePath = D:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\bin
+Calling assembly : Anatoli.ViewModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\web.config
+LOG: Using host configuration file: C:\Users\Emmireco\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67
+LOG: Attempting download of new URL file:///C:/Users/Emmireco/AppData/Local/Temp/Temporary ASP.NET Files/vs/d5314b77/b958989a/protobuf-net.DLL.
+LOG: Attempting download of new URL file:///C:/Users/Emmireco/AppData/Local/Temp/Temporary ASP.NET Files/vs/d5314b77/b958989a/protobuf-net/protobuf-net.DLL.
+LOG: Attempting download of new URL file:///D:/GIT/DeviceBaseSystems/DeviceBaseSystems-BO/DeviceBaseSystem.WebApi/bin/protobuf-net.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Revision Number
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2016-07-05 16:22:59.7432|ERROR|Anatoli.Cloud.WebApi.Controllers.BaseApiController|AnatoliMobileApp|DeviceBaseSystem.Controllers.DeviceModelController+<GetDeviceModels>d__0.MoveNext(d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:33)|Web API Call Error
+EXCEPTION: System.IO.FileLoadException: Could not load file or assembly 'protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67'
+   at System.ModuleHandle.ResolveType(RuntimeModule module, Int32 typeToken, IntPtr* typeInstArgs, Int32 typeInstCount, IntPtr* methodInstArgs, Int32 methodInstCount, ObjectHandleOnStack type)
+   at System.ModuleHandle.ResolveTypeHandleInternal(RuntimeModule module, Int32 typeToken, RuntimeTypeHandle[] typeInstantiationContext, RuntimeTypeHandle[] methodInstantiationContext)
+   at System.Reflection.RuntimeModule.ResolveType(Int32 metadataToken, Type[] genericTypeArguments, Type[] genericMethodArguments)
+   at System.Reflection.CustomAttribute.FilterCustomAttributeRecord(CustomAttributeRecord caRecord, MetadataImport scope, Assembly& lastAptcaOkAssembly, RuntimeModule decoratedModule, MetadataToken decoratedToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, Object[] attributes, IList derivedAttributes, RuntimeType& attributeType, IRuntimeMethodInfo& ctor, Boolean& ctorHasParameters, Boolean& isVarArg)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeModule decoratedModule, Int32 decoratedMetadataToken, Int32 pcaCount, RuntimeType attributeFilterType, Boolean mustBeInheritable, IList derivedAttributes, Boolean isDecoratedTargetSecurityTransparent)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeType type, RuntimeType caType, Boolean inherit)
+   at System.RuntimeType.GetCustomAttributes(Type attributeType, Boolean inherit)
+   at System.ComponentModel.ReflectTypeDescriptionProvider.ReflectGetAttributes(Type type)
+   at System.ComponentModel.ReflectTypeDescriptionProvider.ReflectedTypeData.GetAttributes()
+   at System.ComponentModel.TypeDescriptor.TypeDescriptionNode.DefaultTypeDescriptor.System.ComponentModel.ICustomTypeDescriptor.GetAttributes()
+   at System.ComponentModel.TypeDescriptor.GetAttributes(Type componentType)
+   at System.ComponentModel.ReflectTypeDescriptionProvider.ReflectedTypeData.GetConverter(Object instance)
+   at System.ComponentModel.TypeDescriptor.TypeDescriptionNode.DefaultTypeDescriptor.System.ComponentModel.ICustomTypeDescriptor.GetConverter()
+   at System.ComponentModel.TypeDescriptor.GetConverter(Type type)
+   at AutoMapper.Mappers.TypeConverterMapper.GetTypeConverter(Type type)
+   at AutoMapper.Mappers.TypeConverterMapper.IsMatch(TypePair context)
+   at AutoMapper.MapperConfiguration.<>c__DisplayClass94_0.<CoveredByObjectMap>b__0(IObjectMapper m)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at AutoMapper.MapperConfiguration.CoveredByObjectMap(TypePair typePair)
+   at AutoMapper.MapperConfiguration.<>c__DisplayClass76_0.<ResolveTypeMap>b__1(TypePair tp)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at AutoMapper.MapperConfiguration.<>c__DisplayClass76_0.<ResolveTypeMap>b__0(TypePair _)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at AutoMapper.MapperConfiguration.ResolveTypeMap(TypePair typePair)
+   at AutoMapper.MapperConfiguration.ResolveTypeMap(Type sourceType, Type destinationType)
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpression(ExpressionRequest request, Expression instanceParameter, ConcurrentDictionary`2 typePairCount)
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpression(ExpressionRequest request, ConcurrentDictionary`2 typePairCount)
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.<CreateMapExpression>b__5_0(ExpressionRequest tp)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpression(Type sourceType, Type destinationType, IDictionary`2 parameters, MemberInfo[] membersToExpand)
+   at AutoMapper.QueryableExtensions.ProjectionExpression.To[TResult](IDictionary`2 parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.ProjectionExpression.To[TResult](Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand)
+   at Anatoli.Common.DataAccess.Repositories.BaseAnatoliRepository`1.<FindAllAsync>d__27`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Anatoli.Common.Business.BusinessDomainV3`1.<GetAllAsync>d__24`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Anatoli.Common.Business.BusinessDomainV3`1.<GetAllAsync>d__25`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Anatoli.Common.Business.BusinessDomainV3`1.<GetAllAsync>d__23`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DeviceBaseSystem.Controllers.DeviceModelController.<GetDeviceModels>d__0.MoveNext() in d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:line 28
+
+=== Pre-bind state information ===
+LOG: DisplayName = protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67
+ (Fully-specified)
+LOG: Appbase = file:///D:/GIT/DeviceBaseSystems/DeviceBaseSystems-BO/DeviceBaseSystem.WebApi/
+LOG: Initial PrivatePath = D:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\bin
+Calling assembly : Anatoli.ViewModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\web.config
+LOG: Using host configuration file: C:\Users\Emmireco\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67
+LOG: Attempting download of new URL file:///C:/Users/Emmireco/AppData/Local/Temp/Temporary ASP.NET Files/vs/d5314b77/b958989a/protobuf-net.DLL.
+LOG: Attempting download of new URL file:///C:/Users/Emmireco/AppData/Local/Temp/Temporary ASP.NET Files/vs/d5314b77/b958989a/protobuf-net/protobuf-net.DLL.
+LOG: Attempting download of new URL file:///D:/GIT/DeviceBaseSystems/DeviceBaseSystems-BO/DeviceBaseSystem.WebApi/bin/protobuf-net.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Revision Number
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2016-07-05 18:24:29.0531|ERROR|Anatoli.Cloud.WebApi.Controllers.BaseApiController|AnatoliMobileApp|DeviceBaseSystem.Controllers.DeviceModelController+<GetDeviceModels>d__0.MoveNext(d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:33)|Web API Call Error
+EXCEPTION: System.IO.FileLoadException: Could not load file or assembly 'protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67'
+   at System.ModuleHandle.ResolveType(RuntimeModule module, Int32 typeToken, IntPtr* typeInstArgs, Int32 typeInstCount, IntPtr* methodInstArgs, Int32 methodInstCount, ObjectHandleOnStack type)
+   at System.ModuleHandle.ResolveTypeHandleInternal(RuntimeModule module, Int32 typeToken, RuntimeTypeHandle[] typeInstantiationContext, RuntimeTypeHandle[] methodInstantiationContext)
+   at System.Reflection.RuntimeModule.ResolveType(Int32 metadataToken, Type[] genericTypeArguments, Type[] genericMethodArguments)
+   at System.Reflection.CustomAttribute.FilterCustomAttributeRecord(CustomAttributeRecord caRecord, MetadataImport scope, Assembly& lastAptcaOkAssembly, RuntimeModule decoratedModule, MetadataToken decoratedToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, Object[] attributes, IList derivedAttributes, RuntimeType& attributeType, IRuntimeMethodInfo& ctor, Boolean& ctorHasParameters, Boolean& isVarArg)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeModule decoratedModule, Int32 decoratedMetadataToken, Int32 pcaCount, RuntimeType attributeFilterType, Boolean mustBeInheritable, IList derivedAttributes, Boolean isDecoratedTargetSecurityTransparent)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeType type, RuntimeType caType, Boolean inherit)
+   at System.RuntimeType.GetCustomAttributes(Type attributeType, Boolean inherit)
+   at System.ComponentModel.ReflectTypeDescriptionProvider.ReflectGetAttributes(Type type)
+   at System.ComponentModel.ReflectTypeDescriptionProvider.ReflectedTypeData.GetAttributes()
+   at System.ComponentModel.TypeDescriptor.TypeDescriptionNode.DefaultTypeDescriptor.System.ComponentModel.ICustomTypeDescriptor.GetAttributes()
+   at System.ComponentModel.TypeDescriptor.GetAttributes(Type componentType)
+   at System.ComponentModel.ReflectTypeDescriptionProvider.ReflectedTypeData.GetConverter(Object instance)
+   at System.ComponentModel.TypeDescriptor.TypeDescriptionNode.DefaultTypeDescriptor.System.ComponentModel.ICustomTypeDescriptor.GetConverter()
+   at System.ComponentModel.TypeDescriptor.GetConverter(Type type)
+   at AutoMapper.Mappers.TypeConverterMapper.GetTypeConverter(Type type)
+   at AutoMapper.Mappers.TypeConverterMapper.IsMatch(TypePair context)
+   at AutoMapper.MapperConfiguration.<>c__DisplayClass94_0.<CoveredByObjectMap>b__0(IObjectMapper m)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at AutoMapper.MapperConfiguration.CoveredByObjectMap(TypePair typePair)
+   at AutoMapper.MapperConfiguration.<>c__DisplayClass76_0.<ResolveTypeMap>b__1(TypePair tp)
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at AutoMapper.MapperConfiguration.<>c__DisplayClass76_0.<ResolveTypeMap>b__0(TypePair _)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at AutoMapper.MapperConfiguration.ResolveTypeMap(TypePair typePair)
+   at AutoMapper.MapperConfiguration.ResolveTypeMap(Type sourceType, Type destinationType)
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpression(ExpressionRequest request, Expression instanceParameter, ConcurrentDictionary`2 typePairCount)
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpression(ExpressionRequest request, ConcurrentDictionary`2 typePairCount)
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.<CreateMapExpression>b__5_0(ExpressionRequest tp)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at AutoMapper.QueryableExtensions.ExpressionBuilder.CreateMapExpression(Type sourceType, Type destinationType, IDictionary`2 parameters, MemberInfo[] membersToExpand)
+   at AutoMapper.QueryableExtensions.ProjectionExpression.To[TResult](IDictionary`2 parameters, IEnumerable`1 memberPathsToExpand)
+   at AutoMapper.QueryableExtensions.ProjectionExpression.To[TResult](Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, IConfigurationProvider configuration, Object parameters, Expression`1[] membersToExpand)
+   at AutoMapper.QueryableExtensions.Extensions.ProjectTo[TDestination](IQueryable source, Expression`1[] membersToExpand)
+   at Anatoli.Common.DataAccess.Repositories.BaseAnatoliRepository`1.<FindAllAsync>d__27`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Anatoli.Common.Business.BusinessDomainV3`1.<GetAllAsync>d__24`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Anatoli.Common.Business.BusinessDomainV3`1.<GetAllAsync>d__25`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at Anatoli.Common.Business.BusinessDomainV3`1.<GetAllAsync>d__23`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at DeviceBaseSystem.Controllers.DeviceModelController.<GetDeviceModels>d__0.MoveNext() in d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:line 28
+
+=== Pre-bind state information ===
+LOG: DisplayName = protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67
+ (Fully-specified)
+LOG: Appbase = file:///D:/GIT/DeviceBaseSystems/DeviceBaseSystems-BO/DeviceBaseSystem.WebApi/
+LOG: Initial PrivatePath = D:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\bin
+Calling assembly : Anatoli.ViewModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.
+===
+LOG: This bind starts in default load context.
+LOG: Using application configuration file: D:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\web.config
+LOG: Using host configuration file: C:\Users\Emmireco\Documents\IISExpress\config\aspnet.config
+LOG: Using machine configuration file from C:\Windows\Microsoft.NET\Framework\v4.0.30319\config\machine.config.
+LOG: Post-policy reference: protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67
+LOG: Attempting download of new URL file:///C:/Users/Emmireco/AppData/Local/Temp/Temporary ASP.NET Files/vs/d5314b77/b958989a/protobuf-net.DLL.
+LOG: Attempting download of new URL file:///C:/Users/Emmireco/AppData/Local/Temp/Temporary ASP.NET Files/vs/d5314b77/b958989a/protobuf-net/protobuf-net.DLL.
+LOG: Attempting download of new URL file:///D:/GIT/DeviceBaseSystems/DeviceBaseSystems-BO/DeviceBaseSystem.WebApi/bin/protobuf-net.DLL.
+WRN: Comparing the assembly name resulted in the mismatch: Revision Number
+ERR: Failed to complete setup of assembly (hr = 0x80131040). Probing terminated.
+
+2016-07-05 21:16:12.9051|ERROR|Anatoli.Cloud.WebApi.Controllers.BaseApiController|AnatoliMobileApp|DeviceBaseSystem.Controllers.DeviceModelController+<SaveDeviceModels>d__a.MoveNext(d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:73)|Web API Call Error
+EXCEPTION: AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DeviceModelViewModel -> IEnumerable`1
+Anatoli.ViewModels.DeviceBaseSystem.DeviceModelViewModel -> System.Collections.Generic.IEnumerable`1[[DeviceBaseSystem.DataAccess.Models.DeviceModel, DeviceBaseSystem.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
+Destination path:
+IEnumerable`1
+
+Source value:
+Anatoli.ViewModels.DeviceBaseSystem.DeviceModelViewModel
+   at AutoMapper.MappingEngine.Map(ResolutionContext context)
+   at AutoMapper.Mapper.MapCore(Object source, Type sourceType, Type destinationType, MappingOperationOptions options)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType, Action`1 opts)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source, Action`1 opts)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at DeviceBaseSystem.Controllers.DeviceModelController.<SaveDeviceModels>d__a.MoveNext() in d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:line 66
+2016-07-05 21:16:46.9067|ERROR|Anatoli.Cloud.WebApi.Controllers.BaseApiController|AnatoliMobileApp|DeviceBaseSystem.Controllers.DeviceModelController+<SaveDeviceModels>d__a.MoveNext(d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:73)|Web API Call Error
+EXCEPTION: AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DeviceModelViewModel -> IEnumerable`1
+Anatoli.ViewModels.DeviceBaseSystem.DeviceModelViewModel -> System.Collections.Generic.IEnumerable`1[[DeviceBaseSystem.DataAccess.Models.DeviceModel, DeviceBaseSystem.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
+Destination path:
+IEnumerable`1
+
+Source value:
+Anatoli.ViewModels.DeviceBaseSystem.DeviceModelViewModel
+   at AutoMapper.MappingEngine.Map(ResolutionContext context)
+   at AutoMapper.Mapper.MapCore(Object source, Type sourceType, Type destinationType, MappingOperationOptions options)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType, Action`1 opts)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source, Action`1 opts)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at DeviceBaseSystem.Controllers.DeviceModelController.<SaveDeviceModels>d__a.MoveNext() in d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:line 66
+2016-07-05 21:20:59.3534|ERROR|Anatoli.Cloud.WebApi.Controllers.BaseApiController|AnatoliMobileApp|DeviceBaseSystem.Controllers.DeviceModelController+<SaveDeviceModels>d__a.MoveNext(d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:73)|Web API Call Error
+EXCEPTION: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DeviceBaseSystem.Controllers.DeviceModelController.<SaveDeviceModels>d__a.MoveNext() in d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:line 66
+2016-07-05 21:23:27.9261|ERROR|Anatoli.Cloud.WebApi.Controllers.BaseApiController|AnatoliMobileApp|DeviceBaseSystem.Controllers.DeviceModelController+<SaveDeviceModels>d__a.MoveNext(d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:73)|Web API Call Error
+EXCEPTION: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DeviceBaseSystem.Controllers.DeviceModelController.<SaveDeviceModels>d__a.MoveNext() in d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:line 66
+2016-07-05 21:28:16.7839|ERROR|Anatoli.Cloud.WebApi.Controllers.BaseApiController|AnatoliMobileApp|DeviceBaseSystem.Controllers.DeviceModelController+<SaveDeviceModels>d__a.MoveNext(d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:73)|Web API Call Error
+EXCEPTION: AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DeviceModelViewModel -> IEnumerable`1
+Anatoli.ViewModels.DeviceBaseSystem.DeviceModelViewModel -> System.Collections.Generic.IEnumerable`1[[DeviceBaseSystem.DataAccess.Models.DeviceModel, DeviceBaseSystem.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
+Destination path:
+IEnumerable`1
+
+Source value:
+Anatoli.ViewModels.DeviceBaseSystem.DeviceModelViewModel
+   at AutoMapper.MappingEngine.Map(ResolutionContext context)
+   at AutoMapper.Mapper.MapCore(Object source, Type sourceType, Type destinationType, MappingOperationOptions options)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType, Action`1 opts)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source, Action`1 opts)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at DeviceBaseSystem.Controllers.DeviceModelController.<SaveDeviceModels>d__a.MoveNext() in d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:line 66
+2016-07-05 21:29:20.1361|ERROR|Anatoli.Cloud.WebApi.Controllers.BaseApiController|AnatoliMobileApp|DeviceBaseSystem.Controllers.DeviceModelController+<SaveDeviceModels>d__a.MoveNext(d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:73)|Web API Call Error
+EXCEPTION: AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DeviceModelViewModel -> IEnumerable`1
+Anatoli.ViewModels.DeviceBaseSystem.DeviceModelViewModel -> System.Collections.Generic.IEnumerable`1[[DeviceBaseSystem.DataAccess.Models.DeviceModel, DeviceBaseSystem.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
+Destination path:
+IEnumerable`1
+
+Source value:
+Anatoli.ViewModels.DeviceBaseSystem.DeviceModelViewModel
+   at AutoMapper.MappingEngine.Map(ResolutionContext context)
+   at AutoMapper.Mapper.MapCore(Object source, Type sourceType, Type destinationType, MappingOperationOptions options)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType, Action`1 opts)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source, Action`1 opts)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at DeviceBaseSystem.Controllers.DeviceModelController.<SaveDeviceModels>d__a.MoveNext() in d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:line 66
+2016-07-05 21:31:43.0703|ERROR|Anatoli.Cloud.WebApi.Controllers.BaseApiController|AnatoliMobileApp|DeviceBaseSystem.Controllers.DeviceModelController+<SaveDeviceModels>d__a.MoveNext(d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:73)|Web API Call Error
+EXCEPTION: AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+DeviceModelViewModel -> IEnumerable`1
+Anatoli.ViewModels.DeviceBaseSystem.DeviceModelViewModel -> System.Collections.Generic.IEnumerable`1[[DeviceBaseSystem.DataAccess.Models.DeviceModel, DeviceBaseSystem.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
+Destination path:
+IEnumerable`1
+
+Source value:
+Anatoli.ViewModels.DeviceBaseSystem.DeviceModelViewModel
+   at AutoMapper.MappingEngine.Map(ResolutionContext context)
+   at AutoMapper.Mapper.MapCore(Object source, Type sourceType, Type destinationType, MappingOperationOptions options)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType, Action`1 opts)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source, Action`1 opts)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at DeviceBaseSystem.Controllers.DeviceModelController.<SaveDeviceModels>d__a.MoveNext() in d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:line 66

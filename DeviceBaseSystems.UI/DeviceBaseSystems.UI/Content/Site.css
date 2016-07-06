@@ -1,0 +1,53 @@
+﻿@font-face {
+    font-family: 'far_Yekan';
+    src: url('/fonts/far_Yekan.ttf') format('truetype');
+}
+/**-------------------**/
+* {
+    font-family: far_Yekan,tahoma,arial;
+   /*font-size: 12px;*/ 
+}
+/*kendo*/
+
+div.k-grid-header{
+    padding-right: 0px !important ;
+    padding-left: 17px !important ;
+}
+.k-header {
+    text-align: center !important;
+}
+
+
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+.color-gray {
+    color: #444;
+}
+
+
+.btn-grid{
+    padding: 1px;
+    color: #444;
+}
+
+.large-btn{
+    width :100px;
+}

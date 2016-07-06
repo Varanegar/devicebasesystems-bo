@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Anatoli.DataAccess.Models.Identity;
 using DeviceBaseSystem.DataAccess;
 using System.Threading.Tasks;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using Anatoli.ViewModels.AuthorizationModels;
 using DeviceBaseSystem.DataAccess.Repositories.Account;
 using NLog;
 using Anatoli.Common.DataAccess.Interfaces;
-using Anatoli.DataAccess.Models.Identity;
+
 
 namespace Anatoli.Business.Domain.Authorization
 {

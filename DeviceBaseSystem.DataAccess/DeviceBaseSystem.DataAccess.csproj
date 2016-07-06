@@ -33,9 +33,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Anatoli.Common.DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\SharedLibraries\Anatoli.Common.DataAccess.dll</HintPath>
+    <Reference Include="Anatoli.Common.DataAccess">
+      <HintPath>..\..\..\Anatoli\Anatoli-SharedLibrary\Anatoli.Common.DataAccess.dll</HintPath>
     </Reference>
     <Reference Include="AutoMapper, Version=4.2.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll</HintPath>
@@ -85,11 +84,36 @@
     <Compile Include="Interfaces\Account\IPrincipalRepository.cs" />
     <Compile Include="Interfaces\Account\IUserRepository.cs" />
     <Compile Include="AnatoliDbContext.cs" />
+    <Compile Include="Interfaces\IDeviceModelRepository.cs" />
+    <Compile Include="Interfaces\IBrandRepository.cs" />
     <Compile Include="Migrations\201606180103277_Initial-Migration-1.cs" />
     <Compile Include="Migrations\201606180103277_Initial-Migration-1.Designer.cs">
       <DependentUpon>201606180103277_Initial-Migration-1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201607030126441_AddEntities.cs" />
+    <Compile Include="Migrations\201607030126441_AddEntities.Designer.cs">
+      <DependentUpon>201607030126441_AddEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607051906492_OrderDuration.cs" />
+    <Compile Include="Migrations\201607051906492_OrderDuration.Designer.cs">
+      <DependentUpon>201607051906492_OrderDuration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Brand.cs" />
+    <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\CompanyDevice.cs" />
+    <Compile Include="Models\CompanyDeviceStatus.cs" />
+    <Compile Include="Models\DayPerMonth.cs" />
+    <Compile Include="Models\DeviceBaseModel.cs" />
+    <Compile Include="Models\DeviceModel.cs" />
+    <Compile Include="Models\HourPerDay.cs" />
+    <Compile Include="Models\Minute.cs" />
+    <Compile Include="Models\PurchaseOrder.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\PurchaseOrderLineItem.cs" />
+    <Compile Include="Models\PurchaseOrderPayment.cs" />
+    <Compile Include="Models\TrackingProduct.cs" />
+    <Compile Include="Models\ValidityDuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\Account\AnatoliUserStore.cs" />
     <Compile Include="Repositories\Account\PermissionCatalogRepository.cs" />
@@ -98,6 +122,8 @@
     <Compile Include="Repositories\Account\PrincipalPermissionRepository.cs" />
     <Compile Include="Repositories\Account\PrincipalRepository.cs" />
     <Compile Include="Repositories\Account\UserRepository.cs" />
+    <Compile Include="Repositories\DeviceModelRepository.cs" />
+    <Compile Include="Repositories\BrandRepository.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -127,11 +153,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Configs\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201606180103277_Initial-Migration-1.resx">
       <DependentUpon>201606180103277_Initial-Migration-1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607030126441_AddEntities.resx">
+      <DependentUpon>201607030126441_AddEntities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607051906492_OrderDuration.resx">
+      <DependentUpon>201607051906492_OrderDuration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

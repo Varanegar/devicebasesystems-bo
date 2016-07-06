@@ -1,17 +1,7 @@
-﻿using Anatoli.DataAccess.Models;
-using Anatoli.ViewModels.BaseModels;
-using Anatoli.ViewModels.CustomerModels;
-using Anatoli.ViewModels.Order;
-using Anatoli.ViewModels.PersonnelAcitvityModel;
-using Anatoli.ViewModels.ProductModels;
-using Anatoli.ViewModels.StockModels;
-using Anatoli.ViewModels.StoreModels;
+﻿using Anatoli.ViewModels.DeviceBaseSystem;
 using AutoMapper;
-using Newtonsoft.Json;
+using DeviceBaseSystem.DataAccess.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace DeviceBaseSystem.WebApi.Handler
 {
@@ -24,11 +14,14 @@ namespace DeviceBaseSystem.WebApi.Handler
         }
         private static void ConfigModelToViewModel()
         {
-            
+            Mapper.CreateMap<DeviceModel, DeviceModelViewModel>().ForMember(p => p.UniqueId, opt => opt.MapFrom(src => src.Id)).ForMember(p => p.ID, opt => opt.Ignore()).ForMember(p => p.brandName, opt => opt.MapFrom(src => src.Brand.BrandName));
+            Mapper.CreateMap<Brand, BrandViewModel>().ForMember(p => p.UniqueId, opt => opt.MapFrom(src => src.Id)).ForMember(p => p.ID, opt => opt.Ignore());
         }
 
         private static void ConfigViewModelToModel()
         {
+            Mapper.CreateMap<DeviceModelViewModel, DeviceModel>().ForMember(p => p.Id, opt => opt.MapFrom(src => src.UniqueId)).ForMember(p => p.Number_ID, opt => opt.Ignore());
+            Mapper.CreateMap<BrandViewModel, Brand>().ForMember(p => p.Id, opt => opt.MapFrom(src => src.UniqueId)).ForMember(p => p.Number_ID, opt => opt.Ignore());
 
         }
         private static Guid? ConvertNullableStringToGuid(string data)

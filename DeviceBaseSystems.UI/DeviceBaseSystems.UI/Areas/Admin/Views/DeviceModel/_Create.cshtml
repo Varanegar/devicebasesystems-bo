@@ -1,0 +1,50 @@
+﻿<div id="dlg_device_model" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width:500px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">تعریف مدل دستگاه</h4>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="hdn_id" value="" />
+                <div class="row">
+                    <div class="col-md-2">
+                        <label>* برند :</label>
+                    </div>
+                    <div class="col-md-8">
+                        <div id="ddl_brand" class="form-control"></div>
+
+                    </div>
+                    <div class="col-md-1">
+                        <button id='btn_brand' class='btn btn-default '><span class='glyphicon glyphicon-plus'></span></button>
+                    </div>
+                </div>
+                <br />
+
+                <div class="row">
+                    <div class="col-md-2">
+                        <label>* کد :</label>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="text" id="txt_code" value="" class="form-control" />
+                    </div>
+                </div>
+                <br />
+
+                <div class="row">
+                    <div class="col-md-2">
+                        <label>* عنوان :</label>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="text" id="txt_title" value="" class="form-control" />
+                    </div>
+                </div>
+                <br />
+            </div>
+            <div class="modal-footer">
+                <button id='btn_save_device_model' class='btn btn-primary large-btn'>ذخیره</button>
+                <button id='btn_cancel_device_model' class='btn btn-primary large-btn'>انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity;
+using DeviceBaseSystem.DataAccess.Models;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Anatoli.DataAccess.Models.Identity;
 using Anatoli.DataAccess.Models;
@@ -29,6 +30,23 @@ namespace DeviceBaseSystem.DataAccess
         public DbSet<ApplicationModuleResource> ApplicationModuleResources { get; set; }
         public DbSet<ApplicationModule> ApplicationModules { get; set; }
         public DbSet<PrincipalPermission> PrincipalPermissions { get; set; }
+        #endregion
+
+        #region Device
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<CompanyDevice> CompanyDevices { get; set; }
+        public DbSet<CompanyDeviceStatus> CompanyDeviceStatuses { get; set; }
+        public DbSet<DeviceModel> DeviceModels { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<PurchaseOrder> PurchaseOrders { get; set; }
+        public DbSet<PurchaseOrderLineItem> PurchaseOrderLineItems { get; set; }
+        public DbSet<PurchaseOrderPayment> PurchaseOrderPayments { get; set; }
+        public DbSet<TrackingProduct> TrackingProducts { get; set; }
+        public DbSet<ValidityDuration> ValidityDurations { get; set; }
+        public DbSet<Minute> Minutes { get; set; }
+        public DbSet<DayPerMonth> DayPerMonths { get; set; }
+        public DbSet<HourPerDay> HourPerDays { get; set; }
         #endregion
 
         #endregion
