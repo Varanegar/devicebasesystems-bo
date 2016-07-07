@@ -44,6 +44,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Anatoli.Common">
+      <HintPath>..\..\..\Anatoli\Anatoli-SharedLibrary\Anatoli.Common.dll</HintPath>
+    </Reference>
     <Reference Include="Anatoli.Common.Business">
       <HintPath>..\..\..\Anatoli\Anatoli-SharedLibrary\Anatoli.Common.Business.dll</HintPath>
     </Reference>
@@ -258,6 +261,8 @@
     <Compile Include="Controllers\Base\OrdersController.cs" />
     <Compile Include="Controllers\Base\PermissionController.cs" />
     <Compile Include="Controllers\Base\RolesController.cs" />
+    <Compile Include="Controllers\CompanyDeviceController.cs" />
+    <Compile Include="Controllers\CompanyController.cs" />
     <Compile Include="Controllers\BrandController.cs" />
     <Compile Include="Controllers\DeviceModelController.cs" />
     <Compile Include="Handler\ApiResponse.cs" />

@@ -17,3 +17,43 @@ Anatoli.ViewModels.DeviceBaseSystem.DeviceModelViewModel
    at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
    at AutoMapper.Mapper.Map[TDestination](Object source)
    at DeviceBaseSystem.Controllers.DeviceModelController.<DeleteDeviceModels>d__e.MoveNext() in d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\DeviceModelController.cs:line 88
+2016-07-06 13:20:20.5322|ERROR|Anatoli.Cloud.WebApi.Controllers.BaseApiController|AnatoliMobileApp|DeviceBaseSystem.Controllers.CompanyController+<SaveCompanys>d__a.MoveNext(d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\CompanyController.cs:75)|Web API Call Error
+EXCEPTION: System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DeviceBaseSystem.Controllers.CompanyController.<SaveCompanys>d__a.MoveNext() in d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\CompanyController.cs:line 68
+2016-07-06 13:22:48.1856|ERROR|Anatoli.Cloud.WebApi.Controllers.BaseApiController|AnatoliMobileApp|DeviceBaseSystem.Controllers.CompanyController+<SaveCompanys>d__a.MoveNext(d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\CompanyController.cs:75)|Web API Call Error
+EXCEPTION: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Anatoli.Common.Business.BusinessDomainV3`1.<PublishAsync>d__29.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at DeviceBaseSystem.Controllers.CompanyController.<SaveCompanys>d__a.MoveNext() in d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\CompanyController.cs:line 68
+2016-07-06 13:23:15.5251|ERROR|Anatoli.Cloud.WebApi.Controllers.BaseApiController|AnatoliMobileApp|DeviceBaseSystem.Controllers.CompanyController+<SaveCompanys>d__a.MoveNext(d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\CompanyController.cs:75)|Web API Call Error
+EXCEPTION: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Anatoli.Common.Business.BusinessDomainV3`1.<PublishAsync>d__29.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at DeviceBaseSystem.Controllers.CompanyController.<SaveCompanys>d__a.MoveNext() in d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\CompanyController.cs:line 68
+2016-07-06 13:31:09.6867|ERROR|Anatoli.Cloud.WebApi.Controllers.BaseApiController|AnatoliMobileApp|DeviceBaseSystem.Controllers.CompanyController+<DeleteCompanys>d__e.MoveNext(d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\CompanyController.cs:95)|Web API Call Error
+EXCEPTION: AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CompanyViewModel -> IEnumerable`1
+Anatoli.ViewModels.DeviceBaseSystem.CompanyViewModel -> System.Collections.Generic.IEnumerable`1[[DeviceBaseSystem.DataAccess.Models.Company, DeviceBaseSystem.DataAccess, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+
+Destination path:
+IEnumerable`1
+
+Source value:
+Anatoli.ViewModels.DeviceBaseSystem.CompanyViewModel
+   at AutoMapper.MappingEngine.Map(ResolutionContext context)
+   at AutoMapper.Mapper.MapCore(Object source, Type sourceType, Type destinationType, MappingOperationOptions options)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map(Object source, Type sourceType, Type destinationType, Action`1 opts)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source, Action`1 opts)
+   at AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   at AutoMapper.Mapper.Map[TDestination](Object source)
+   at DeviceBaseSystem.Controllers.CompanyController.<DeleteCompanys>d__e.MoveNext() in d:\GIT\DeviceBaseSystems\DeviceBaseSystems-BO\DeviceBaseSystem.WebApi\Controllers\CompanyController.cs:line 88

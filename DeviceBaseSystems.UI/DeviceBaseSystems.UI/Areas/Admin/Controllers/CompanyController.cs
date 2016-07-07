@@ -6,13 +6,12 @@ using System.Web.Mvc;
 
 namespace DeviceBaseSystems.UI.Areas.Admin.Controllers
 {
-    public class DeviceModelController : Controller
+    public class CompanyController : Controller
     {
-        // GET: Admin/DeviceModel
+        // GET: Admin/Company
         public ActionResult Index()
         {
             return View();
         }
-
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -15,9 +16,13 @@ namespace DeviceBaseSystem.DataAccess.Models
 
         [ForeignKey("DeviceModel")]
         public Guid DeviceModelId { get; set; }
-        public virtual DeviceModel DeviceModel { get; set; }
+        public DeviceModel DeviceModel { get; set; }
 
+        [StringLength(100)]
         public string IMEI { get; set; }
+
+        [StringLength(500)]
+        public string Description { get; set; }
 
 
     }

@@ -14,18 +14,18 @@ using DeviceBaseSystem.WebApi.Classes;
 namespace DeviceBaseSystem.Controllers
 {
 
-    [RoutePrefix("api/device/brnd")]
-    public class BrandController : AnatoliApiController
+    [RoutePrefix("api/device/company")]
+    public class CompanyController : AnatoliApiController
     {
-        #region Loyalty Tier
+        #region company
         [Authorize(Roles = "AuthorizedApp, User")]
         [Route("ldlst")]
         [HttpPost]
-        public async Task<IHttpActionResult> GetBrands()
+        public async Task<IHttpActionResult> GetCompanies()
         {
             try
             {
-                var result = await new BrandDomain(OwnerInfo).GetAllAsync<BrandViewModel>();
+                var result = await new CompanyDomain(OwnerInfo).GetAllAsync<CompanyViewModel>();
                 return Ok(result);
             }
             catch (Exception ex)
@@ -38,12 +38,12 @@ namespace DeviceBaseSystem.Controllers
         [Authorize(Roles = "AuthorizedApp, User")]
         [Route("byid")]
         [HttpPost]
-        public async Task<IHttpActionResult> GetById([FromBody]BrandRequestModel data)
+        public async Task<IHttpActionResult> GetById([FromBody]CompanyRequestModel data)
         {
             try
             {
-                var result = await new BrandDomain(OwnerInfo).GetAllAsync<BrandViewModel>(x => x.Id == data.uniqueId); 
-                //await new BrandDomain(OwnerInfo).GetByIdAsync<BrandViewModel>(data.uniqueId);
+                var result = await new CompanyDomain(OwnerInfo).GetAllAsync<CompanyViewModel>(x => x.Id == data.uniqueId); 
+                //await new CompanyDomain(OwnerInfo).GetByIdAsync<CompanyViewModel>(data.uniqueId);
                 if (result.Any())
                     return Ok(result[0]);
                 return Ok();
@@ -60,14 +60,14 @@ namespace DeviceBaseSystem.Controllers
         [Authorize(Roles = "AuthorizedApp, User")]
         [Route("save")]
         [HttpPost]
-        public async Task<IHttpActionResult> SaveBrands([FromBody]BrandRequestModel data)
+        public async Task<IHttpActionResult> SaveCompanys([FromBody]CompanyRequestModel data)
         {
             try
             {
-                var domain = new BrandDomain(OwnerInfo);
-                await domain.PublishAsync(AutoMapper.Mapper.Map<Brand>(data.brandData));
+                var domain = new CompanyDomain(OwnerInfo);
+                await domain.PublishAsync(AutoMapper.Mapper.Map<Company>(data.companyData));
 
-                return Ok(data.brandData);
+                return Ok(data.companyData);
 
             }
             catch (Exception ex)
@@ -80,14 +80,14 @@ namespace DeviceBaseSystem.Controllers
         [Authorize(Roles = "AuthorizedApp, User")]
         [Route("rmv")]
         [HttpPost]
-        public async Task<IHttpActionResult> DeleteBrands([FromBody]BrandRequestModel data)
+        public async Task<IHttpActionResult> DeleteCompanys([FromBody]CompanyRequestModel data)
         {
             try
             {
-                var domain = new BrandDomain(OwnerInfo);
-                await domain.DeleteBrands(new List<Brand>() { AutoMapper.Mapper.Map<Brand>(data.brandData) });
+                var domain = new CompanyDomain(OwnerInfo);
+                await domain.Delete(new List<Company>() { AutoMapper.Mapper.Map<Company>(data.companyData) });
 
-                return Ok(data.brandData);
+                return Ok(data.companyData);
 
             }
             catch (Exception ex)

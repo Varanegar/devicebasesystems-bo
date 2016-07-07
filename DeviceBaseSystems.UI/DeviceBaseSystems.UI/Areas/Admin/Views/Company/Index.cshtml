@@ -1,0 +1,23 @@
+﻿@Scripts.Render("~/areas/admin/Scripts/company.js")
+
+    @{
+        ViewBag.Title = "شرکت ها";   
+    }
+
+<br/>
+<div class="panel panel-default ">
+    
+    <div class="panel-heading">  
+        <button id='btn_company_add'  class="btn btn-primary">شرکت جدید <span class='glyphicon glyphicon-plus'></span></button>
+    
+    </div>
+    <div class="panel-body">
+        <div id="grd_company"> </div>
+
+        @Html.Partial("_Create")
+
+
+    </div>
+
+</div>
+

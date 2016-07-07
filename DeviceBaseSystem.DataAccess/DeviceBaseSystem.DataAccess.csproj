@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Anatoli.Common">
+      <HintPath>..\..\..\Anatoli\Anatoli-SharedLibrary\Anatoli.Common.dll</HintPath>
+    </Reference>
     <Reference Include="Anatoli.Common.DataAccess">
       <HintPath>..\..\..\Anatoli\Anatoli-SharedLibrary\Anatoli.Common.DataAccess.dll</HintPath>
     </Reference>
@@ -84,6 +87,8 @@
     <Compile Include="Interfaces\Account\IPrincipalRepository.cs" />
     <Compile Include="Interfaces\Account\IUserRepository.cs" />
     <Compile Include="AnatoliDbContext.cs" />
+    <Compile Include="Interfaces\ICompanyDeviceRepository.cs" />
+    <Compile Include="Interfaces\ICompanyRepository.cs" />
     <Compile Include="Interfaces\IDeviceModelRepository.cs" />
     <Compile Include="Interfaces\IBrandRepository.cs" />
     <Compile Include="Migrations\201606180103277_Initial-Migration-1.cs" />
@@ -97,6 +102,10 @@
     <Compile Include="Migrations\201607051906492_OrderDuration.cs" />
     <Compile Include="Migrations\201607051906492_OrderDuration.Designer.cs">
       <DependentUpon>201607051906492_OrderDuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201607062306583_DevceCompany_AddDesc.cs" />
+    <Compile Include="Migrations\201607062306583_DevceCompany_AddDesc.Designer.cs">
+      <DependentUpon>201607062306583_DevceCompany_AddDesc.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Brand.cs" />
@@ -122,6 +131,8 @@
     <Compile Include="Repositories\Account\PrincipalPermissionRepository.cs" />
     <Compile Include="Repositories\Account\PrincipalRepository.cs" />
     <Compile Include="Repositories\Account\UserRepository.cs" />
+    <Compile Include="Repositories\CompanyDeviceRepository.cs" />
+    <Compile Include="Repositories\CompanyRepository.cs" />
     <Compile Include="Repositories\DeviceModelRepository.cs" />
     <Compile Include="Repositories\BrandRepository.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
@@ -163,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201607051906492_OrderDuration.resx">
       <DependentUpon>201607051906492_OrderDuration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607062306583_DevceCompany_AddDesc.resx">
+      <DependentUpon>201607062306583_DevceCompany_AddDesc.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

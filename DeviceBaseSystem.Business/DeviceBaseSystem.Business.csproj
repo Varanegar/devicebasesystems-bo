@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Anatoli.Common">
+      <HintPath>..\..\..\Anatoli\Anatoli-SharedLibrary\Anatoli.Common.dll</HintPath>
+    </Reference>
     <Reference Include="Anatoli.Common.Business">
       <HintPath>..\..\..\Anatoli\Anatoli-SharedLibrary\Anatoli.Common.Business.dll</HintPath>
     </Reference>
@@ -104,6 +107,8 @@
   <ItemGroup>
     <Compile Include="Domain\Account\UserDomain.cs" />
     <Compile Include="Domain\Authorization\AuthorizationDomain.cs" />
+    <Compile Include="Domain\CompanyDeviceDomain.cs" />
+    <Compile Include="Domain\CompanyDomain.cs" />
     <Compile Include="Domain\DeviceModelDomain.cs" />
     <Compile Include="Domain\BrandDomain.cs" />
     <Compile Include="Domain\Permissions\PermissionDomain.cs" />

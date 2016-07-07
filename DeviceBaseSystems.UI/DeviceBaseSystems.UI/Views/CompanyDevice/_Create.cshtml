@@ -1,0 +1,47 @@
+﻿<div id="dlg_company_device" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width:500px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">تعریف دستگاه</h4>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="hdn_id" value="" />
+                <div class="row">
+                    <div class="col-md-3">
+                        <label>* مدل :</label>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="ddl_device_model" class="form-control"></div>
+
+                    </div>
+                </div>
+                <br />
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <label>* IMEI :</label>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="text" id="txt_code" value="" class="form-control" />
+                    </div>
+                </div>
+                <br />
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <label> توضیحات :</label>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="text" id="txt_desc" value="" class="form-control" />
+                    </div>
+                </div>
+                <br />
+            </div>
+            <div class="modal-footer">
+                <button id='btn_save_company_device' class='btn btn-primary large-btn'>ذخیره</button>
+                <button id='btn_cancel_company_device' class='btn btn-primary large-btn'>انصراف</button>
+            </div>
+        </div>
+    </div>
+</div>

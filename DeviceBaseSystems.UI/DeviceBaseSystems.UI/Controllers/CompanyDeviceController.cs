@@ -4,15 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace DeviceBaseSystems.UI.Areas.Admin.Controllers
+namespace DeviceBaseSystems.UI.Controllers
 {
-    public class DeviceModelController : Controller
+    public class CompanyDeviceController : Controller
     {
-        // GET: Admin/DeviceModel
+        // GET: CompanyDevice
         public ActionResult Index()
         {
             return View();
         }
-
     }
 }

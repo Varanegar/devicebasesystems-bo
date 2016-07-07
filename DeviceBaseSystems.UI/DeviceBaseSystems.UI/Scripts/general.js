@@ -1,6 +1,7 @@
 ﻿$(document).ready(function () {
     kendo.culture("fa-IR");
-    intDate();
+    intDate();   
+
 });
 //------------------------------------------------------
 //date time

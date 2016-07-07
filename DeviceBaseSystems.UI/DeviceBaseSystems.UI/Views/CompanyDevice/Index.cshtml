@@ -1,0 +1,23 @@
+﻿@Scripts.Render("~/Scripts/companydevice.js")
+
+    @{
+        ViewBag.Title = "دستگاه های شرکت";   
+    }
+
+<br/>
+<div class="panel panel-default ">
+    
+    <div class="panel-heading">  
+        <button id='btn_company_device_add'  class="btn btn-primary">دستگاه جدید <span class='glyphicon glyphicon-plus'></span></button>
+    
+    </div>
+    <div class="panel-body">
+        <div id="grd_company_device"> </div>
+
+        @Html.Partial("_Create")
+
+
+    </div>
+
+</div>
+

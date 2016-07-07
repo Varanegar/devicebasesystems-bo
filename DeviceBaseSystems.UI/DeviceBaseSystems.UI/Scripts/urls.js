@@ -31,4 +31,19 @@ urls = {
     getbrand: url_server + url_prefix + "brnd/byid",
     removebrand: url_server + url_prefix + "brnd/rmv",
 
+    //--------------------------------------------------------
+    // Company
+    //--------------------------------------------------------
+    loadcompany: url_server + url_prefix + "company/ldlst",
+    savecompany: url_server + url_prefix + "company/save",
+    getcompany: url_server + url_prefix + "company/byid",
+    removecompany: url_server + url_prefix + "company/rmv",
+
+    //--------------------------------------------------------
+    // Company Device
+    //--------------------------------------------------------
+    loadcompanydevice: url_server + url_prefix + "companydev/ldlst",
+    savecompanydevice: url_server + url_prefix + "companydev/save",
+    getcompanydevice: url_server + url_prefix + "companydev/byid",
+    removecompanydevice: url_server + url_prefix + "companydev/rmv",
 };

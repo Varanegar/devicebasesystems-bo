@@ -9,20 +9,29 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <_PublishTargetUrl>D:\publish\Device\Cilent</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
+    <File Include="Areas/Admin/Scripts/company.js">
+      <publishTime>07/06/2016 13:40:58</publishTime>
+    </File>
     <File Include="Areas/Admin/Scripts/devicemodel.js">
-      <publishTime>07/05/2016 21:56:10</publishTime>
+      <publishTime>07/06/2016 12:10:05</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Company/Index.cshtml">
+      <publishTime>07/06/2016 13:27:49</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Company/_Create.cshtml">
+      <publishTime>07/06/2016 13:26:20</publishTime>
     </File>
     <File Include="Areas/Admin/Views/DeviceModel/Index.cshtml">
       <publishTime>07/05/2016 19:29:02</publishTime>
     </File>
     <File Include="Areas/Admin/Views/DeviceModel/_Create.cshtml">
-      <publishTime>07/05/2016 21:08:29</publishTime>
+      <publishTime>07/06/2016 11:29:42</publishTime>
     </File>
     <File Include="Areas/Admin/Views/Home/Index.cshtml">
       <publishTime>07/05/2016 13:13:28</publishTime>
     </File>
     <File Include="Areas/Admin/Views/Shared/_Layout.cshtml">
-      <publishTime>07/05/2016 21:53:04</publishTime>
+      <publishTime>07/06/2016 15:26:12</publishTime>
     </File>
     <File Include="Areas/Admin/Views/web.config">
       <publishTime>07/05/2016 12:30:54</publishTime>
@@ -94,16 +103,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/05/2016 12:06:16</publishTime>
     </File>
     <File Include="bin/Anatoli.Common.ViewModel.dll">
-      <publishTime>06/20/2016 19:55:38</publishTime>
+      <publishTime>07/06/2016 12:37:37</publishTime>
     </File>
     <File Include="bin/Anatoli.ViewModels.dll">
-      <publishTime>07/05/2016 14:40:36</publishTime>
+      <publishTime>07/06/2016 14:57:25</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
       <publishTime>07/05/2016 12:07:05</publishTime>
     </File>
     <File Include="bin/DeviceBaseSystems.UI.dll">
-      <publishTime>07/05/2016 21:57:49</publishTime>
+      <publishTime>07/06/2016 16:03:22</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>07/05/2016 12:06:56</publishTime>
@@ -208,7 +217,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/05/2016 12:32:02</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>07/05/2016 21:53:02</publishTime>
+      <publishTime>07/06/2016 11:29:06</publishTime>
     </File>
     <File Include="favicon.ico">
       <publishTime>07/05/2016 12:06:16</publishTime>
@@ -248,6 +257,15 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Scripts/bootstrap/respond.min.js">
       <publishTime>07/05/2016 12:07:06</publishTime>
+    </File>
+    <File Include="Scripts/companydevice.js">
+      <publishTime>07/06/2016 15:59:36</publishTime>
+    </File>
+    <File Include="Scripts/customergeneral.js">
+      <publishTime>07/06/2016 15:54:19</publishTime>
+    </File>
+    <File Include="Scripts/general.js">
+      <publishTime>07/06/2016 14:20:16</publishTime>
     </File>
     <File Include="Scripts/jquery/jquery-2.1.4.js">
       <publishTime>07/05/2016 12:39:28</publishTime>
@@ -298,7 +316,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/05/2016 12:07:04</publishTime>
     </File>
     <File Include="Scripts/urls.js">
-      <publishTime>07/05/2016 16:15:10</publishTime>
+      <publishTime>07/06/2016 15:14:23</publishTime>
     </File>
     <File Include="Scripts/util/persianDatepicker.min.js">
       <publishTime>07/05/2016 15:56:41</publishTime>
@@ -310,7 +328,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/05/2016 15:56:41</publishTime>
     </File>
     <File Include="Scripts/_references.js">
-      <publishTime>07/05/2016 15:59:20</publishTime>
+      <publishTime>07/06/2016 14:41:57</publishTime>
+    </File>
+    <File Include="Views/CompanyDevice/Index.cshtml">
+      <publishTime>07/06/2016 15:07:13</publishTime>
+    </File>
+    <File Include="Views/CompanyDevice/_Create.cshtml">
+      <publishTime>07/06/2016 16:00:16</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
       <publishTime>07/05/2016 13:15:32</publishTime>
@@ -319,7 +343,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/05/2016 12:06:16</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>07/05/2016 15:45:58</publishTime>
+      <publishTime>07/06/2016 15:08:50</publishTime>
     </File>
     <File Include="Views/Shared/_login.cshtml">
       <publishTime>07/05/2016 15:43:53</publishTime>

@@ -34,10 +34,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/30/2016 11:13:08</publishTime>
     </File>
     <File Include="bin/Anatoli.Common.Business.dll">
-      <publishTime>06/25/2016 16:16:48</publishTime>
+      <publishTime>07/06/2016 12:37:37</publishTime>
     </File>
     <File Include="bin/Anatoli.Common.DataAccess.dll">
-      <publishTime>06/20/2016 19:55:38</publishTime>
+      <publishTime>07/06/2016 12:37:37</publishTime>
+    </File>
+    <File Include="bin/Anatoli.Common.dll">
+      <publishTime>07/06/2016 12:37:37</publishTime>
     </File>
     <File Include="bin/Anatoli.Common.Gateway.dll">
       <publishTime>12/26/2015 15:27:08</publishTime>
@@ -49,7 +52,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/19/2016 13:11:14</publishTime>
     </File>
     <File Include="bin/Anatoli.Common.WebApi.dll">
-      <publishTime>06/25/2016 16:16:48</publishTime>
+      <publishTime>07/06/2016 12:37:37</publishTime>
     </File>
     <File Include="bin/Anatoli.DataAccess.dll">
       <publishTime>05/28/2016 09:58:39</publishTime>
@@ -136,7 +139,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/27/2016 21:02:01</publishTime>
     </File>
     <File Include="bin/Anatoli.ViewModels.dll">
-      <publishTime>07/05/2016 14:40:36</publishTime>
+      <publishTime>07/06/2016 14:57:25</publishTime>
     </File>
     <File Include="bin/Anatoli.ViewModels.pdb">
       <publishTime>05/29/2016 11:04:29</publishTime>
@@ -145,28 +148,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/02/2016 14:54:46</publishTime>
     </File>
     <File Include="bin/DeviceBaseSystem.Business.dll">
-      <publishTime>07/05/2016 18:26:48</publishTime>
+      <publishTime>07/06/2016 15:08:05</publishTime>
     </File>
     <File Include="bin/DeviceBaseSystem.Business.pdb">
-      <publishTime>07/05/2016 18:26:48</publishTime>
+      <publishTime>07/06/2016 15:08:05</publishTime>
     </File>
     <File Include="bin/DeviceBaseSystem.DataAccess.dll">
-      <publishTime>07/05/2016 18:26:44</publishTime>
+      <publishTime>07/06/2016 15:08:03</publishTime>
     </File>
     <File Include="bin/DeviceBaseSystem.DataAccess.pdb">
-      <publishTime>07/05/2016 18:26:44</publishTime>
+      <publishTime>07/06/2016 15:08:02</publishTime>
     </File>
     <File Include="bin/DeviceBaseSystem.dll">
-      <publishTime>07/05/2016 21:59:04</publishTime>
+      <publishTime>07/06/2016 15:08:08</publishTime>
     </File>
     <File Include="bin/DeviceBaseSystem.pdb">
-      <publishTime>07/05/2016 21:59:04</publishTime>
+      <publishTime>07/06/2016 15:08:08</publishTime>
     </File>
     <File Include="bin/DeviceBaseSystem.ViewModels.dll">
-      <publishTime>07/05/2016 11:05:06</publishTime>
+      <publishTime>07/06/2016 13:14:57</publishTime>
     </File>
     <File Include="bin/DeviceBaseSystem.ViewModels.pdb">
-      <publishTime>07/05/2016 11:05:05</publishTime>
+      <publishTime>07/06/2016 13:14:57</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>07/02/2016 14:54:50</publishTime>
@@ -349,7 +352,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/05/2016 18:45:13</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/05/2016 21:59:05</publishTime>
+      <publishTime>07/06/2016 16:03:40</publishTime>
     </File>
   </ItemGroup>
 </Project>

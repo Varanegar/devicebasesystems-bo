@@ -11,39 +11,38 @@ using DeviceBaseSystem.DataAccess.Models;
 
 namespace DeviceBaseSystem.Business.Domain
 {
-    public class BrandDomain : BusinessDomainV3<Brand>, IBusinessDomainV3<Brand>
+    public class CompanyDomain : BusinessDomainV3<Company>, IBusinessDomainV3<Company>
     {
         #region Ctors
-        public BrandDomain(OwnerInfo ownerInfo)
+        public CompanyDomain(OwnerInfo ownerInfo)
             : this(ownerInfo, new AnatoliDbContext())
         {
         }
-        public BrandDomain(OwnerInfo ownerInfo, AnatoliDbContext dbc)
+        public CompanyDomain(OwnerInfo ownerInfo, AnatoliDbContext dbc)
             : base(ownerInfo, dbc)
         {
         }
         #endregion
 
         #region Methods
-        public override void AddDataToRepository(Brand currentBrand, Brand item)
+        public override void AddDataToRepository(Company current, Company item)
         {
-            if (currentBrand != null)
+            if (current != null)
             {
-                currentBrand.LastUpdate = DateTime.Now;
-                currentBrand.BrandName = item.BrandName;
-                currentBrand.BrandCode = item.BrandCode;                    
-                MainRepository.Update(currentBrand);
+                current.LastUpdate = DateTime.Now;
+                current.CompanyName = item.CompanyName;
+                current.CompanyCode = item.CompanyCode;                    
+                MainRepository.Update(current);
             }
             else
             {
                 if (item.Id == Guid.Empty)
                     item.Id = Guid.NewGuid();
-
                 item.CreatedDate = item.LastUpdate = DateTime.Now;
                 MainRepository.Add(item);
             }
         }
-        public async Task DeleteBrands(List<Brand> datas)
+        public async Task Delete(List<Company> datas)
         {
             //Validate
 

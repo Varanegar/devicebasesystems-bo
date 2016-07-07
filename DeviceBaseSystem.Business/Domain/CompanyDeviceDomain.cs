@@ -11,39 +11,41 @@ using DeviceBaseSystem.DataAccess.Models;
 
 namespace DeviceBaseSystem.Business.Domain
 {
-    public class BrandDomain : BusinessDomainV3<Brand>, IBusinessDomainV3<Brand>
+    public class CompanyDeviceDomain : BusinessDomainV3<CompanyDevice>, IBusinessDomainV3<CompanyDevice>
     {
         #region Ctors
-        public BrandDomain(OwnerInfo ownerInfo)
+        public CompanyDeviceDomain(OwnerInfo ownerInfo)
             : this(ownerInfo, new AnatoliDbContext())
         {
         }
-        public BrandDomain(OwnerInfo ownerInfo, AnatoliDbContext dbc)
+        public CompanyDeviceDomain(OwnerInfo ownerInfo, AnatoliDbContext dbc)
             : base(ownerInfo, dbc)
         {
         }
         #endregion
 
         #region Methods
-        public override void AddDataToRepository(Brand currentBrand, Brand item)
+        public override void AddDataToRepository(CompanyDevice current, CompanyDevice item)
         {
-            if (currentBrand != null)
+            if (current != null)
             {
-                currentBrand.LastUpdate = DateTime.Now;
-                currentBrand.BrandName = item.BrandName;
-                currentBrand.BrandCode = item.BrandCode;                    
-                MainRepository.Update(currentBrand);
+                current.LastUpdate = DateTime.Now;
+                current.IMEI = item.IMEI;
+                current.Description = item.Description;                    
+                current.DeviceModelId = item.DeviceModelId;
+                current.CompanyId = item.CompanyId;                    
+                MainRepository.Update(current);
             }
             else
             {
                 if (item.Id == Guid.Empty)
                     item.Id = Guid.NewGuid();
-
                 item.CreatedDate = item.LastUpdate = DateTime.Now;
                 MainRepository.Add(item);
             }
         }
-        public async Task DeleteBrands(List<Brand> datas)
+
+        public async Task Delete(List<CompanyDevice> datas)
         {
             //Validate
 
